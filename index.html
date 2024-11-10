@@ -1,0 +1,144 @@
+<DOCTYPE html>
+  <html lang="pt-BR">
+  <html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>aceitas?</title>
+    <style>
+      body { 
+        background-image: URL('assets/asset-photo/fundo.jpg');
+        background-repeat: no-repeat;
+        background-size: cover; 
+        background-position: center; 
+        background-attachment: fixed; 
+        margin: 0px 
+      } 
+    
+         * { 
+           margin: 0;
+           padding: 0;
+           box-sizing: border-box; 
+         }
+    
+      .image { 
+        position: relative;
+        width: 100%;
+        max-width: 1000px;
+        heigth: auto;
+        display: block;
+        maegin: 0 auto;
+        top: 95px;
+        animation: flutuar 4s ease-in-out infinite; 
+      }
+       .image2 {
+         position: relative;
+         z-index: 1;
+         width: 100%;
+         max-width: 1000px;
+         heigth: auto;
+         display: block;
+         maegin: 0 auto;
+         top: 75px;
+         animation: flutuar2 6s ease-in-out infinite; }      
+                
+              /* keys importantes abaixo! */
+    
+                  @keyframes flutuar {
+                  0% { top: 0px; } 
+                  50% { top: 20px; }
+                  100% { top: 0px; } }
+    
+                  @keyframes flutuar2 {
+                  0% { top: 0px; } 
+                  50% { top: 7px; }
+                  100% { top: 0px; } }
+    
+    
+     .botao { 
+       padding: 5px 30px;
+       border-radius: 200px; 
+       background-image: URL('assets/asset-photo/botao.jpeg');
+       margin: 15px 120px;
+       border: none;
+       color: white; 
+     }
+    
+    .botao:hover {
+      transform: scale(0.99) }
+    
+    .botao:active {
+      transform: scale(0.97) }
+    
+    .botao2 { 
+      padding: 5px 30px;
+      border-radius: 200px;
+      background-image: URL('assets/asset-photo/chamas.jpg');
+      margin: 5px 137px;
+      border: none;
+      color: white; 
+    }
+    
+    .duby {
+      color: blue;
+      font-size: 10px;
+      background: black;
+      border-radius: 100px;
+    }
+    
+    .tisar {
+      color: red;
+      font-size: 10px;
+      margin: 10px;
+      background-color: yellow;
+      border-radius: 100px;
+    }
+    
+    .salmo {
+      padding: 0px 0px 0px 70px;
+      margin-top: -130px;
+      position: absolute;
+      z-index: 2;
+    }
+      
+    
+    .botao2:hover { transform: scale(0.99) }
+    .botao2:active { transform: scale(0.97) 
+      
+    }
+    
+    #texto {
+      margin-top: 20px;
+    }
+    
+    xoxt {
+      display: flex;
+      aling-items: center;
+      gap: 10px;
+      
+    }
+    </style>
+    <script>
+    function mostrarTexto() {
+            alert("boa escolha irmão! eu estou orando por voce e pelo seu sucesso!"); }
+    
+    
+    
+    function conscientizar() {
+      alert("reepense denovo! você não quer ir para lá... quer?");
+    }
+    </script>
+    <body>
+      <img src="assets/asset-photo/senhor.png" class="image" />
+      <button onclick="mostrarTexto()" class="botao">aceitar jesus</button>
+      <button onclick="conscientizar()" class="botao2">nega-lo</button>
+      <div class="xoxt">
+      <img src="assets/asset-photo/biblia.png" class="image2" />
+      <p class="salmo">
+        <i><b class="duby">Salmo 121:</b></i><br><span class="tisar">O socorro vem do Senhor, que fez os céus e a terra.</span>
+      </div>
+      </p>
+    </body>
+  </head>
+  </html> 
+  
